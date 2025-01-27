@@ -34,65 +34,7 @@ body{
 .header .btn-book:hover {
   background-color: #b58350;
 }
-.divsion1{
-  width: 45%;
-  height: auto;
-  margin-right: auto;
-  padding: 0.8rem;
-}
-.divsion1 i{
-  color:#cf9d6c;
-  font-size: 1.2rem;
-}
-.divsion1 a{
-  color:#343434;
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-.divsion2{
-  width:10%;
-  height: auto;
-  text-decoration: none;
-  padding: 0.8rem;
-  display: flex;
-  justify-content: center;
 
-}
-
-.divsion3{
-  width:45%;
-  height: auto;
-  padding: 0.8rem;
-}
-.divsion3 i{
-  color:#cf9d6c;
-  font-size: 1.2rem;
-}
-.divsion3 a{
-  color:#343434;
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-.divsion3 .book-now-btn{
-  height: auto;
-  background-color: #cf9d6c;
-  font-size: 1.2rem;
-  padding: 1rem;
-  border: none;
-  border-radius: 1rem;
-  color: #ffff;
-  transition: width 0.3s ease, background-color 0.3s ease;
-}
-.divsion3 .book-now-btn:hover{
-  width:30%;
-  height: auto;
-  background-color: #9f6c3a;
-  font-size: 1.2rem;
-  padding: 1rem;
-  border: none;
-  border-radius: 1rem;
-  color: #ffff;
-}
 .popup {
   display: none;
   position: fixed;
@@ -660,7 +602,7 @@ color: #343434;
 }
 @media screen and (max-width:440px){
 .topbar a{
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 }
 @media screen and (max-width: 490px){
@@ -680,9 +622,6 @@ color: #343434;
   }
 
 }
-@media screen and (max-width:768px){
-  
 
-}
 
   
