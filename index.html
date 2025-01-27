@@ -19,53 +19,72 @@
   <header id="headersection">
     <section class="topbar">
       <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-4 divsion1">
-            <i class="fas fa-map-marker-alt mx-2"></i>
-            <span>Varkala, Kerala</span>
-            <i class="fas fa-envelope mx-2"></i>
-            <span><a href="mailto:info@example.com">info@example.com</a></span>
-          </div>
-          <div class="col-4 divsion2 ">
-            <img src="img/Logo Sanskriti Home.webp" alt="Sanskriti Home Logo" style="height: 80px;">
-          </div>
-          <div class="col-4 divsion3">
-            <i class="fas fa-phone-alt mx-2"></i>
-            <a href="tel:9387398884">+91 9387398884</a>
-            <button class="book-now-btn mx-4" onclick="openPopup()">Book Now</button>
-          </div>
+        <div class="row align-items-center">
+            <!-- Left Section: Location and Mail -->
+            <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-evenly my-2">
+                <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+                    <div class="icon-text">
+                        <i class="fas fa-map-marker-alt" style="color: #cf9d6b;"></i>
+                        <span>Pozhikara, Varkala, Kerala</span>
+                    </div>
+                    <div class="icon-text">
+                        <i class="fas fa-envelope" style="color: #cf9d6b;"></i>
+                        <a href="mailto:info@sankritihomes.com"><span>info@sankritihomes.com</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center Section: Logo -->
+            <div class="col-12 col-md-4 d-flex justify-content-center mb-2 mb-md-0">
+                <img src="./img/Logo Sanskriti Home.webp" alt="Company Logo" class="logo">
+            </div>
+
+            <!-- Right Section: Phone and Book Now -->
+            <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-evenly my-2">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="icon-text">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>
+                            <a href="tel:+919387398884">+91-9387398884</a>
+                            <a href="tel:+919995988291">+91-9995988291</a>
+                        </span>
+                    </div>
+                    <button class="btn btn-book" onclick="openPopup()">Book Now</button>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
       <div id="popupForm" class="popup">
         <div class="popup-content">
           <span class="close" onclick="closePopup()">&times;</span>
           <form id="contactForm" onsubmit="event.preventDefault(); sendToWhatsApps();">
             <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" autocomplete="off" id="names" placeholder="Enter your name" required>
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" autocomplete="off" id="names" placeholder="Enter your name"
+                required>
             </div>
             <div class="mb-3">
-                <label for="number" class="form-label">Number</label> 
-                <input type="tel" class="form-control" id="number" placeholder="Enter your contact number" required>
+              <label for="number" class="form-label">Number</label>
+              <input type="tel" class="form-control" id="number" placeholder="Enter your contact number" required>
             </div>
             <div class="mb-3">
-                <label for="country" class="form-label">Country/City</label>
-                <input type="text" class="form-control" id="country" placeholder="Enter your country or city" required>
+              <label for="country" class="form-label">Country/City</label>
+              <input type="text" class="form-control" id="country" placeholder="Enter your country or city" required>
             </div>
             <div class="mb-3">
-                <label for="checkInDate" class="form-label">Check-In Date</label>
-                <input type="date" class="form-control" id="checkInDate" required>
+              <label for="checkInDate" class="form-label">Check-In Date</label>
+              <input type="date" class="form-control" id="checkInDate" required>
             </div>
             <div class="mb-3">
-                <label for="checkOutDate" class="form-label">Check-Out Date</label>
-                <input type="date" class="form-control" id="checkOutDate" required>
+              <label for="checkOutDate" class="form-label">Check-Out Date</label>
+              <input type="date" class="form-control" id="checkOutDate" required>
             </div>
             <div class="mb-3">
-                <label for="persons" class="form-label">Number of Persons</label>
-                <input type="number" class="form-control" id="persons" placeholder="Enter number of persons" required>
+              <label for="persons" class="form-label">Number of Persons</label>
+              <input type="number" class="form-control" id="persons" placeholder="Enter number of persons" required>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+            <button type="submit" class="btn btn-primary subbtn">Submit</button>
+          </form>
         </div>
       </div>
     </section>
@@ -102,27 +121,11 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/ENERGY-EFFICIENT-BUNGALOW-HOME-DESIGNS-1024x538.webp" class="d-block w-100" alt="...">
+            <img src="img/Banner.webp" class="d-block w-100" alt="...">
             <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0">
               <h5 CLASS="text-uppercase">BEST CHOICE FOR family</h5>
               <h1 class="text-uppercase">come us a guest<br>leave as a friend</h1>
               <button class="btn-light text-uppercase p-3 explore">EXPLORE MORE</button>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/ENERGY-EFFICIENT-BUNGALOW-HOME-DESIGNS-1024x538.webp" class="d-block w-100" alt="..." >
-            <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0">
-              <h5>Second slide label</h5>
-              <h1 class="text-uppercase">come us a guest<br>leave as a friend</h1>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./img/ENERGY-EFFICIENT-BUNGALOW-HOME-DESIGNS-1024x538.webp" class="d-block w-100" alt="..." >
-            <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0">
-              <h5>Third slide label</h5>
-              <h2 class="text-uppercase">come us a guest<br>leave as a friend</h2>
-              <p>Some representative placeholder content for the third slide.</p>
             </div>
           </div>
         </div>
@@ -178,16 +181,17 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6 ychoseimage">
-            <img src="img/roomphotos.png" alt="" srcset="">
+            <img src="img/Why Choose Us.webp" alt="" srcset="">
           </div>
           <div class="col-lg-6 d-flex flex-column justify-content-around align-items-center px-4 ychosedesc">
             <div class="align-self-start">
               <h2 class="text-uppercase pt-3">Why Choose Us</h2>
               <p class="text-uppercase">SOME WORD ABOUT US</p>
-              <p>Sansriti home plays a pivotal role in promoting beach tourism near the exotic beaches of Kappil and
-                Pozhikkara, in Kollam district, Kerala. With the bluish-green waters of Paravoor lake in the back drop,
-                this is the ideal place to lose yourself in the lap of nature. You can experience living in a
-                traditional home along with all modern facilities and an array of delicacies.</p>
+              <p class="ychosedesc__para text-white">Sanskriti Homes in the Kollam region of Kerala will be your door step to a peaceful retreat, close to
+                the unique beaches of Kappil and Pozhikkara. It provides the perfect break and time to re-establish the
+                connection with nature-a range of regional delicacies along with modern amenities and the grace of a
+                traditional house. Sanskriti Homes offers a memorable stay that combines tradition with modern luxury,
+                whether your goal is adventure or rest.</p>
               <div class="ychosedesc">
                 <div class="row row-cols-1 row-cols-md-2 g-4 text-start">
                   <div class="col h-100 d-flex align-items-center">
@@ -196,12 +200,9 @@
                   </div>
                   <div class="col h-100 d-flex align-items-center">
                     <i class="fa-solid fa-square-parking" style="color: #cf9d6c;"></i>
-                    <span class="px-2">Paid Car Parking</span>
+                    <span class="px-2">Free Car Parking</span>
                   </div>
-                  <div class="col h-100 d-flex align-items-center">
-                    <i class="fa-solid fa-spa" style="color: #cf9d6c;"></i>
-                    <span class="px-2">Yoga</span>
-                  </div>
+                
                   <div class="col h-100 d-flex align-items-center">
                     <i class="fa-solid fa-kitchen-set" style="color: #cf9d6c;"></i>
                     <span class="px-2">Well Equipped Kitchen</span>
@@ -290,7 +291,7 @@
     </section>
     <section class="container py-5">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 order-md-first">
           <h2 class="section-title">THINGS TO DO</h2>
           <h4 class="section-subtitle">ALL ACTIVITIES AT SANSKRITI HOME</h4>
           <p>
@@ -311,41 +312,39 @@
               <img src="./img/camfire-01.svg" alt="Camp Fire">
               <span>CAMP FIRE</span>
             </div>
-            <div class="col-6 text-center feature-item">
-              <img src="./img/ayurveda-01.svg" alt="Ayurveda & Spa">
-              <span>AYURVEDA & SPA</span>
-            </div>
           </div>
-          <div class="mt-4">
-            <button class="find-out-more-btn">FIND OUT MORE</button>
+          <div class="mt-4 find-out-more-container">
+            <a href="./facilities.html"><button class="find-out-more-btn my-3">FIND OUT MORE</button></a>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 order-md-last">
           <div class="row g-3">
-            <div class="col-6">
-              <img src="./img/inchathotty20231004094702_1343_1.webp" alt="Kayaking" class="img-fluid rounded">
+            <div class="col-6 activimg">
+              <img src="./img/inchathotty20231004094702_1343_1.webp" alt="Kayaking" class="img-fluid rounded things__img">
             </div>
-            <div class="col-6">
+            <div class="col-6 activimg">
               <img src="/img/getlstd-property-photo.webp" alt="Spa" class="img-fluid rounded">
             </div>
-            <div class="col-6">
+            <div class="col-6 activimg">
               <img src="./img/7-3-campfire.webp" alt="Camp Fire" class="img-fluid rounded">
             </div>
-            <div class="col-6">
+            <div class="col-6 activimg">
               <img src="./img/62685a5bb7f8d_pexels-firos-nv-4704302.webp" alt="Canoeing" class="img-fluid rounded">
             </div>
           </div>
+          
         </div>
+        
       </div>
     </section>
     <section class="vacation-section">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row  order-md-1 align-items-center">
           <!-- Image Grid -->
           <div class="col-lg-6">
             <div class="row g-2">
               <div class="col-12">
-                <img src="./img/vacationandamenitiiesphoto.webp" alt="Image 1" class="img-fluid images">
+                <img src="./img/Vacation Memorable.webp" alt="Image 1" class="img-fluid images">
               </div>
             </div>
           </div>
@@ -410,9 +409,9 @@
   </main>
   <footer>
     <section class="footer-logo">
-       <div>
+      <div>
         <img src="img/Logo Sanskriti Home.webp" alt="" srcset="">
-       </div>
+      </div>
     </section>
     <section class="footer-desc">
       <div class="container">
@@ -427,11 +426,13 @@
           <div class="col-lg-4">
             <h3 class="text-center text-white">Information</h3>
             <ul>
-              <li class="d-flex justify-content-center"><i class="fa-solid fa-location-dot" style="color: #fcfcfc;"></i><span class="text-white mx-3">Varkala</span></li>
+              <li class="d-flex justify-content-center"><i class="fa-solid fa-location-dot"
+                  style="color: #fcfcfc;"></i><span class="text-white mx-3">Pozhikara, Varkala</span></li>
             </ul>
             <h3 class="text-center text-white">Call For Registration</h3>
             <ul>
-              <li class="d-flex justify-content-center"><i class="fa-solid fa-phone" style="color: #fcfcfc;"></i><a href="tel:++919387398884"><span class="text-white mx-3">+91 93873 98884</span></a></li>
+              <li class="d-flex justify-content-center"><i class="fa-solid fa-phone" style="color: #fcfcfc;"></i><a href="tel:+919387398884"><span class="text-white mx-3">+91-93873 98884</span></a></li>
+              <li class="d-flex justify-content-center ms-3"><a href="tel:+919995988291"><span class="text-white mx-3">+91-9995988291</span></a></li>
             </ul>
           </div>
           <div class="col-lg-4 ">
