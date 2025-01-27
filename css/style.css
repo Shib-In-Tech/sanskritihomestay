@@ -602,7 +602,7 @@ color: #343434;
 }
 @media screen and (max-width:440px){
 .topbar a{
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 }
 @media screen and (max-width: 490px){
